@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:cli" : "webpack --entry ./index.js --output ./bundle.js",
-    "build:local" : "webpack --mode production",
-    "build:external" : "webpack --config ./external/webpack.config.js",
-    "build:multientry" : "webpack --config ./multi-entry-points/webpack.config.js"
-
+    "build:cli": "webpack --entry ./index.js --output ./bundle.js",
+    "build:local": "webpack --mode production",
+    "build:external": "webpack --config ./external/webpack.config.js",
+    "build:multientry": "webpack --config ./multi-entry-points/webpack.config.js",
+    "build:css-loader": "webpack --config ./css-style-loader/webpack.config.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "3.6.0",
+    "style-loader": "1.2.1",
     "webpack": "4.32.2",
     "webpack-cli": "3.3.12"
   },
