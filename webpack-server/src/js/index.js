@@ -1,2 +1,10 @@
 import '../css/index.css'
-console.log('este es el archivo de inicio')
+import text from './text';
+
+text()
+
+if(module.hot) {
+    module.hot.accept('./text.js' , function (){
+        text();
+    })
+}
