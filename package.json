@@ -6,7 +6,9 @@
   "scripts": {
     "build:cli" : "webpack --entry ./index.js --output ./bundle.js",
     "build:local" : "webpack --mode production",
-    "build:external" : "webpack --config ./external/webpack.config.js"
+    "build:external" : "webpack --config ./external/webpack.config.js",
+    "build:multientry" : "webpack --config ./multi-entry-points/webpack.config.js"
+
   },
   "author": "",
   "license": "ISC",
