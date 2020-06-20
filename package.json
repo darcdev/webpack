@@ -15,8 +15,9 @@
     "build:react": "webpack-dev-server --config ./react/webpack.config.js --watch",
     "build:url-loader": "webpack-dev-server --config ./url-loader/webpack.config.js --watch",
     "build:url-prepo": "webpack-dev-server --config ./prepo/webpack.config.js --watch",
-    "build:prevent-duplication": "webpack --config ./prevent-duplication/webpack.config.js"
-
+    "build:prevent-duplication": "webpack --config ./prevent-duplication/webpack.dll.config.js",
+    "build:dll": "webpack --config ./dll/webpack.dll.config.js",
+    "build:prevent-duplication-fast": "webpack --config ./dll/webpack.config.js"
   },
   "author": "",
   "license": "ISC",
