@@ -1,10 +1,12 @@
-import '../css/index.css'
-import text from './text';
+import '../css/index.css';
+import search from './search';
+import render from './render';
+const id = prompt('Digite el id');
 
-text()
-
-if(module.hot) {
-    module.hot.accept('./text.js' , function (){
-        text();
-    })
-}
+search(id)
+.then((data) => {
+    render(data);
+})
+.catch(() => {
+    console.log('no hubo problema')
+})

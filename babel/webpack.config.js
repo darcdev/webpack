@@ -13,7 +13,6 @@ module.exports = {
         filename : 'js/[name].js'
     },
     devServer : {
-        hot : true,
         open : true,
         port : 9000,
     },
@@ -31,7 +30,6 @@ module.exports = {
         ]
     },
     plugins : [
-        new webpack.HotModuleReplacementPlugin(),
          new MiniCssExtractPlugin({
              filename : 'css/[name].css'
          }),
